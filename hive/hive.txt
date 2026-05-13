@@ -61,4 +61,15 @@ day_of_week;
 
 
 
+SELECT
+    F.FlightID,
+    F.Airline,
+    P.PassengerName,
+    P.SeatNo
+FROM FlightInfo F
+JOIN PassengerInfo P
+ON F.FlightID = P.FlightID;
+
+
+
 drop table flightinfo;
